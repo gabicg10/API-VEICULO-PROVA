@@ -29,17 +29,17 @@ export function listarVeiculos() {
 
 export function inicializarVeiculo() {
     bancoDadosVeiculo.push(
-        new Veiculo(10, 4, 'preto', 'ford', 'GST7589', 'Ka', 2016, 'carro'));
+        new Veiculo(10, 4, 'preto', 'ford', 'GST7589', 2016, 'carro'));
 
     bancoDadosVeiculo.push(
-        new Veiculo(15, 2, 'vermelho', 'yamaha', 'BHN6390', 'Biz', 2006, 'moto'));
+        new Veiculo(15, 2, 'vermelho', 'yamaha', 'BHN6390', 2006, 'moto'));
 
     bancoDadosVeiculo.push(
-        new Veiculo(8, 4, 'branco', 'ford', 'KMJ7503', 'hillux', 2022, 'caminhonete'));
+        new Veiculo(8, 4, 'branco', 'ford', 'KMJ7503', 2022, 'caminhonete'));
 
     bancoDadosVeiculo.push(
-        new Veiculo(13, 4, 'cinza', 'ford', 'GST7589', 'Ka', 2013, 'caminhao'));
+        new Veiculo(13, 4, 'cinza', 'ford', 'GST7589', 2013, 'caminhao'));
 
     bancoDadosVeiculo.push(
-        new Veiculo(10, 4, 'amarelo', 'mercedez', 'BSH03827', 'benz', 2019, 'onibus'));
+        new Veiculo(10, 4, 'amarelo', 'mercedez', 'BSH03827', 2019, 'onibus'));
 }

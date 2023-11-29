@@ -6,18 +6,16 @@ export class Veiculo {
     private cor: string;
     private marca: string;
     private placa: string;
-    private modelo: string;
     private ano: number;
     private tipo: string;
 
     //método construtor
-    public constructor (_combustivel: number, _rodas: number, _cor:string, _marca: string, _placa: string, _modelo: string, _ano: number, _tipo:string) {
+    public constructor (_combustivel: number, _rodas: number, _cor:string, _marca: string, _placa: string, _ano: number, _tipo:string) {
             this.combustivel = _combustivel;
             this.rodas = _rodas;
             this.cor = _cor;
             this.marca = _marca;
             this.placa = _placa;
-            this.modelo = _modelo;
             this.ano = _ano;
             this.tipo = _tipo;
     }
@@ -57,13 +55,6 @@ export class Veiculo {
         return this.placa;
     }
 
-    public setModelo(_modelo: string) {
-        this.modelo = _modelo;
-    }
-    public getModelo() {
-        return this.modelo;
-    }
-
     public setAno(_ano: number) {
         this.ano = _ano;
     }
@@ -84,7 +75,6 @@ export class Veiculo {
         Cor: ${this.cor}
         Marca: ${this.marca}
         Placa: ${this.placa}
-        Modelo: ${this.modelo}
         Ano: ${this.ano}
         Tipo: ${this.tipo}`);
     }

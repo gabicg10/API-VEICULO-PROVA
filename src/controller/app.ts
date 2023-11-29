@@ -40,10 +40,10 @@ app.listen(port, () => {
 // Rota para cadastraar veiculo
 app.post('/', (req, res) => {
     // Recuperando as informações JSON que vieram no corpo (body) da requisição (req) e desestruturando essa informação para cada atributo
-    const {combustivel,rodas,cor,marca,placa,modelo,ano,tipo } = req.body;
+    const {combustivel,rodas,cor,marca,placa,ano,tipo } = req.body;
 
     // Criando um novo objeto do tipo Veiculo com as informações recuperadas da requisição
-    const veiculo = new Veiculo(combustivel,rodas,cor,marca,placa,modelo,ano,tipo );
+    const veiculo = new Veiculo(combustivel,rodas,cor,marca,placa,ano,tipo );
 
     // Apenas imprimindo as informações do objeto no console do servidor
     console.log(veiculo);
