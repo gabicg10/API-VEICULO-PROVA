@@ -7,21 +7,23 @@ export class Veiculo {
     private marca: string;
     private placa: string;
     private ano: number;
+    private tipo: string;
 
     //método construtor
-    public constructor (_combustivel: number, _rodas: number, _cor:string, _marca: string, _placa: string, _ano: number) {
-            this.combustivel = _combustivel;
-            this.rodas = _rodas;
-            this.cor = _cor;
-            this.marca = _marca;
-            this.placa = _placa;
-            this.ano = _ano;
+    public constructor(_combustivel: number, _rodas: number, _cor: string, _marca: string, _placa: string, _ano: number, _tipo: string) {
+        this.combustivel = _combustivel;
+        this.rodas = _rodas;
+        this.cor = _cor;
+        this.marca = _marca;
+        this.placa = _placa;
+        this.ano = _ano;
+        this.tipo = _tipo;
     }
 
-    public setCombustivel(_combustivel:number){
+    public setCombustivel(_combustivel: number) {
         this.combustivel = _combustivel;
     }
-    public getCombustivel(){
+    public getCombustivel() {
         return this.combustivel;
     }
 
@@ -32,7 +34,7 @@ export class Veiculo {
         return this.rodas;
     }
 
-    public setCor(_cor:string){
+    public setCor(_cor: string) {
         this.cor = _cor;
     }
     public getCor() {
@@ -60,12 +62,20 @@ export class Veiculo {
         return this.ano;
     }
 
+    public setTipo(_tipo: string) {
+        this.tipo = _tipo;
+    }
+    public getTipo() {
+        return this.tipo;
+    }
+
     public mostrarVeiculo() {
         console.log(`Combustivel: ${this.combustivel}
         Rodas: ${this.rodas}
         Cor: ${this.cor}
         Marca: ${this.marca}
         Placa: ${this.placa}
-        Ano: ${this.ano}`);
+        Ano: ${this.ano}
+        Tipo: ${this.tipo}`);
     }
 }

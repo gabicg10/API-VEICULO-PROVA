@@ -7,7 +7,7 @@
     "start": "npx tsc && node .\\dist\\controller\\app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Gabriela de Carvalho Goncalves",
+  "author": "Gabriela, Isabela, Isadora, Livia, Heloa",
   "license": "ISC",
   "devDependencies": {
     "@types/cors": "^2.8.17",
