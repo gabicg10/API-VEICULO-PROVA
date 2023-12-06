@@ -1,5 +1,4 @@
 export class Veiculo {
-
     // atributos da classe
     private combustivel: number;
     private rodas: number;
@@ -18,6 +17,15 @@ export class Veiculo {
         this.placa = _placa;
         this.ano = _ano;
         this.tipo = _tipo;
+    }
+    public mostrarVeiculo() {
+        console.log(`Combustivel: ${this.combustivel}
+        Rodas: ${this.rodas}
+        Cor: ${this.cor}
+        Marca: ${this.marca}
+        Placa: ${this.placa}
+        Ano: ${this.ano}
+        Tipo: ${this.tipo}`);
     }
 
     public setCombustivel(_combustivel: number) {
@@ -69,13 +77,5 @@ export class Veiculo {
         return this.tipo;
     }
 
-    public mostrarVeiculo() {
-        console.log(`Combustivel: ${this.combustivel}
-        Rodas: ${this.rodas}
-        Cor: ${this.cor}
-        Marca: ${this.marca}
-        Placa: ${this.placa}
-        Ano: ${this.ano}
-        Tipo: ${this.tipo}`);
-    }
+   
 }
