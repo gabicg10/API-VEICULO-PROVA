@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.inicializarVeiculo = exports.listarVeiculos = exports.persistirVeiculo = void 0;
-const Veiculo_1 = require("../model/Veiculo");
+const VeiculoLeve_1 = require("../model/VeiculoLeve");
+const VeiculoPesado_1 = require("../model/VeiculoPesado");
 /**
  * Lista de veiculos que são armazenadas durante a execução do programa
  */
@@ -30,11 +31,11 @@ function listarVeiculos() {
 }
 exports.listarVeiculos = listarVeiculos;
 function inicializarVeiculo() {
-    bancoDadosVeiculo.push(new Veiculo_1.Veiculo(10, 4, 'preto', 'ford', 'GST7589', 'Ka', 2016, 'carro'));
-    bancoDadosVeiculo.push(new Veiculo_1.Veiculo(15, 2, 'vermelho', 'yamaha', 'BHN6390', 'Biz', 2006, 'moto'));
-    bancoDadosVeiculo.push(new Veiculo_1.Veiculo(8, 4, 'branco', 'ford', 'KMJ7503', 'hillux', 2022, 'caminhonete'));
-    bancoDadosVeiculo.push(new Veiculo_1.Veiculo(13, 4, 'cinza', 'ford', 'GST7589', 'Ka', 2013, 'caminhao'));
-    bancoDadosVeiculo.push(new Veiculo_1.Veiculo(10, 4, 'amarelo', 'mercedez', 'BSH03827', 'benz', 2019, 'onibus'));
+    bancoDadosVeiculo.push(new VeiculoLeve_1.VeiculoLeve(10, 4, 'amarelo', 'honda', 'GSB7593', 2017, 'carro', 300));
+    bancoDadosVeiculo.push(new VeiculoLeve_1.VeiculoLeve(15, 2, 'vermelho', 'yamaha', 'BHN6390', 2006, 'moto', 70));
+    bancoDadosVeiculo.push(new VeiculoLeve_1.VeiculoLeve(8, 4, 'branco', 'ford', 'KMJ7503', 2022, 'caminhonete', 250));
+    bancoDadosVeiculo.push(new VeiculoPesado_1.VeiculoPesado(13, 4, 'cinza', 'ford', 'GST7589', 2018, 'caminhao', 5));
+    bancoDadosVeiculo.push(new VeiculoPesado_1.VeiculoPesado(10, 4, 'amarelo', 'mercedez', 'BSH03827', 2019, 'onibus', 1));
 }
 exports.inicializarVeiculo = inicializarVeiculo;
 //# sourceMappingURL=bancoDeDados.js.map

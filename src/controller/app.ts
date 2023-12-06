@@ -25,13 +25,14 @@ app.get("/", (req, res) => {
 
 // Rota para consultar veículos
 app.get("/veiculo", (req, res) => {
+    console.log('entrei na rota');
     const listaDeVeiculos = listarVeiculos();
     console.log("Retornando a lista de veículos cadastrados");
     res.json(listaDeVeiculos);
 });
 
 // Rota para cadastrar veículo
-app.post("/cadastro", (req: Request, res: Response) => {
+app.post("/cadastro", (req, res) => {
     try {
         // Recuperando as informações JSON que vieram no corpo (body) da requisição (req) e desestruturando essa informação para cada atributo
         const { combustivel, rodas, cor, marca, placa, ano, peso, cargaMaxima } = req.body;
@@ -57,3 +58,4 @@ app.post("/cadastro", (req: Request, res: Response) => {
 app.listen(port, () => {
     console.log(`Servidor Express ouvindo no endereço http://localhost:${port}/`);
 });
+
